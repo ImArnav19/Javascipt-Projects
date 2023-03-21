@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding :0;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+    
+}
+
+body{
+    min-height: 100vh;
+    background-color: #0E8388;
+}
+
+#main{
+    width:420px;
+    height:500px;
+    margin : 10vh auto;
+    background-color: #CBE4DE;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 1.6);
+    border-radius: 15px;
+    border: 1px solid #0E8388;
+    padding: 15px;
+    overflow-y: scroll;
+
+}
+#main::-webkit-scrollbar{
+    display: none;
+}
+
+#main .bar{
+    text-align: right;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    
+
+ 
+
+}
+
+#main .bar i{
+    display: inline-block;
+    font-size: 1.75rem;
+    margin-left: 4px;
+
+
+
+}
+
+#main .bar #search_bar{
+    width:88%;
+    height:7vh;
+    border: 1px solid #0E8388;
+    padding: 0 15px;
+    border-radius: 12px;
+    font-size: 1.1em;
+    display:inline-block;
+
+}
+
+#main .prod_list{
+    
+    display: grid;
+    grid-auto-rows: 0.5fr;
+   
+    
+
+
+    
+
+}
+
+#main .prod_list .prod{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 5px 0;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.4);
+    border-radius: 15px;
+    border: 1px solid #0e848897;
+    padding: 10px;
+    cursor: pointer;
+   
+    
+
+
+
+
+
+}
+
+#main .prod_list .prod img{
+    width:100px;
+}

@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    min-height:100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    width:70vw;
+    padding:5%;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.7);
+    background-color: aliceblue;
+    border: 1px solid white;
+    border-radius: 12px;
+    
+
+}
+
+.grocery_form h2{
+    text-align: center;
+}
+
+.alert_success{
+    visibility: hidden;
+    background-color: green;
+    color:white;
+    width:80%;
+    text-align: center;
+    margin:20px;
+
+
+}
+
+.alert_fail{
+    visibility: hidden;
+    background-color: red;
+    color:white;
+    width:80%;
+    text-align: center;
+    margin:20px;
+
+}
+
+.form_control{
+    width:80%;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+   
+    
+    padding:5px;
+    margin: 5% auto;
+
+}
+
+.form_control input{
+    background-color: rgb(186, 187, 188);
+    padding: 3%;
+    border: 1px solid black;
+    
+    
+
+
+}
+
+.cont{
+    margin-top :1rem;
+    
+
+}
+
+.reset{
+    width:10vw;
+    margin:0px auto;
+    padding: 1%;
+    display: block;
+}
+
+.list{
+
+
+
+}
+
+article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:1rem;
+    padding:0 4rem;
+    border-radius: 12px;
+    text-transform: capitalize;
+    background-color: antiquewhite;
+    height:10vh;
+    background-blend-mode: lighten;
+
+}
+
+.form_control button{
+    background-color: blue;
+    color:white;
+    border: 1px solid black;
+    
+}
+
+
+
+

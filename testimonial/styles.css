@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    cursor:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 61);
+    
+
+}
+.main{
+    
+
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 0.719);
+}
+
+.cursor{
+    z-index:99;
+    position: fixed;
+    background-color: #2696E8;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: colors 5s infinite;
+    display: none;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 20px #2696E8,0 0 60px #2696E8,0 0 100px #2696E8;
+}
+@keyframes colors{
+    0%{
+        filter: hue-rotate(0deg);
+
+    }
+    100%{
+        filter:hue-rotate(360deg);
+
+    }
+}
+
+.cursor:before{
+    content: "";
+    position: absolute;
+    opacity: 0.2;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: translate(-30%,-30%);
+    background-color: #2696E8;
+
+}
+
